@@ -38,6 +38,13 @@ The documentation of OpenCV, which can be found [here](https://docs.opencv.org/4
 
 OpenCV is well known to developers in general. The project initially released in June 2000 has since gained a lot of traction and
 
+![Some openCV uses](https://user-images.githubusercontent.com/102037357/171344947-0553be0d-e06d-4557-9929-766124ffc6ac.JPG)
+As seen in the picture above, OpenCV is utilised in many exciting applications such as object recognition and person tracking, 3D scanning, Automated driver assistance or medical imaging. The specific extend to which OpenCV is used in these applications is hard to track down, since while OpenCV is open source, applications that use the Library are themselves not open source.
+
+### OpenCV Licensing
+
+Since the beginning of openCV, it operated under a BSD license. This License allowed everybody to use to use the library in any kind of project, be it a personal project, education, research or even commercial projects for free without any limitations. The Only problem with this license is, that if someone contributes code to the library, that they patented prior to this contribution, they could still sue someone for the commercial use of this particular code. To prevent this, OpenCV 4.5.0 and above, released in October 2020 uses an apache 2 license. While this change still allows the free use of OpenCV in any project, it also prevents contributers from suing anyone for using any part of the library in any kind of project.
+
 ### Closing statements
 
 ##### Sources:
