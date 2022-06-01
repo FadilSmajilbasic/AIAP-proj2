@@ -36,7 +36,15 @@ The documentation of OpenCV, which can be found [here](https://docs.opencv.org/4
 
 ### OpenCV compared to MatLab
 
-The main advantage of OpenCV beside its functionality is the fact that it is open source and free to use. But of course OpenCV has some downsides. One of OpenCVs diasadvantages is the ease of use. As an example lets try to display a picture. If we try to display a picture in MatLab we need two lines of code. One to load the image and one to display it. In OpenCV we need around 10-15 lines of code. This is because a lot of the "housekeeping" that is done in the background by MatLab has to be done manually with OpenCV. On the other hand, since MatLab is such a high level scripting language, it is very slow compared to good code written with OpenCV. As an example, MatLab might typically be able to process about 3-4 frames of a video per second, while the same application written with OpenCV might be able to process around 30 frames per second, which definitely gives it an edge especially in real-time applications. The same logic follows if we look at the resources needed to run an application. Because MatLab is is such a high level scripting language, it is inherantly inefficient. Appearently it is by no means unheard of that MatLab uses over one Gigabyte of RAM, a comparable project with OpenCV only uses about 100 Megabytes of RAM, assuming your code does not have any Memory leaks.
+The main advantage of OpenCV beside its functionality is the fact that it is open source and free to use. But of course OpenCV has some downsides. 
+#### Ease of use
+One of OpenCVs diasadvantages is the ease of use. As an example lets try to display a picture. If we try to display a picture in MatLab we need two lines of code. One to load the image and one to display it. In OpenCV we need around 10-15 lines of code. This is because a lot of the "housekeeping" that is done in the background by MatLab has to be done manually with OpenCV. 
+#### Speed
+On the other hand, since MatLab is such a high level scripting language, it is very slow compared to good code written with OpenCV. As an example, MatLab might typically be able to process about 3-4 frames of a video per second, while the same application written with OpenCV might be able to process around 30 frames per second, which definitely gives it an edge especially in real-time applications. 
+#### Rescources needed
+The same logic follows if we look at the resources needed to run an application. Because MatLab is is such a high level scripting language, it is inherantly inefficient. Appearently it is by no means unheard of that MatLab uses over one Gigabyte of RAM, a comparable project with OpenCV only uses about 100 Megabytes of RAM, assuming your code does not have any Memory leaks.
+
+In the end it is probably fair to say, that OpenCV has the strong potential to yield better results if you are willing to invest the time to actually learn how to use it, where its pitfalls are and how to handle them.
 
 ### Developer adoption
 
