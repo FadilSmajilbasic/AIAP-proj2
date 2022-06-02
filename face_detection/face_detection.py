@@ -18,11 +18,11 @@ if (capture.isOpened()):
         # Draw rectangle around the faces
         for (x, y, w, h) in faces:
             # Add rectangle around face
-            # cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)
+            cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)
 
             # Add ellipse/circle around face
-            cv2.ellipse(frame, center=(int(x+(w/2)), int(y+(h/2))), axes=(int(w/2), int(h/2)),
-                        angle=0, startAngle=90, endAngle=450, color=(0, 0, 255), thickness=1)
+            # cv2.ellipse(frame, center=(int(x+(w/2)), int(y+(h/2))), axes=(int(w/2), int(h/2)),
+            #             angle=0, startAngle=90, endAngle=450, color=(0, 0, 255), thickness=1)
 
             # Add a point at the center of a face
             # cv2.circle(frame, (int(x+(w/2)), int(y+(h/2))),

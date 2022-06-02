@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>AI Applications mini project 2</title>
+    <title>AI Applications mini project 2 - OpenCV</title>
     <style>
       /* From extension vscode.github */
       /*---------------------------------------------------------------------------------------------
@@ -1146,24 +1146,22 @@
         text-justify: inter-word;
       }
 
-      #ai-applications-mini-project-2,
+      #ai-applications-mini-project-2---opencv,
       #fadil-smajilbasic--fabian-freitag {
         text-align: center;
       }
     </style>
   </head>
   <body class="vscode-body vscode-light">
-    <h1 id="ai-applications-mini-project-2">AI Applications mini project 2 - OpenCV</h1>
+    <h1 id="ai-applications-mini-project-2---opencv">AI Applications mini project 2 - OpenCV</h1>
     <h5 id="fadil-smajilbasic--fabian-freitag">Fadil Smajilbasic &amp; Fabian Freitag</h5>
-    <div style="display: block; height: 50px"></div>
-
-    <h2 id="what-is-it-used-for">What is it used for?</h2>
+    <h3 id="what-is-it-used-for">What is it used for?</h3>
     <p>
       OpenCV stands for Open Computer Vision. It offers a very exhaustive framework for everything related to computer
       vision. OpenCV can be used for very basic tasks like opening an Image or a Video in a python project and editing
-      these pictures. One option it offers, that will be used a lot is to greyscale an Image, since many of the other
-      resources provided with OpenCV require an image to be in greyscale. In our example we use OpenCV to detect a Face
-      in an Image. This could be extended to use a Webcam and detect Faces in a livestream.
+      these pictures. One option it offers, that will be used a lot, is to grayscale an Image, since many of the other
+      resources provided with OpenCV require an image to be in grayscale. In our example, we use OpenCV to detect a Face
+      in an Image. This could be extended to use a Webcam and detect faces in a livestream.
     </p>
     <p>OpenCV includes a statistical machine learning library that contains:</p>
     <ul>
@@ -1178,62 +1176,70 @@
       <li>Support vector machine (SVM)</li>
       <li>Deep neural networks (DNN)</li>
     </ul>
-    <h2 id="how-do-you-use-it">How do you use it</h2>
+    <h3 id="how-do-you-use-it">How do you use it</h3>
     <p>
-      To use openCV you have to install it using: <code>pip install opencv-python</code> And then import it in your
+      To use OpenCV, you have to install it using: <code>pip install opencv-python</code> And then import it in your
       python file using: <code>import cv2</code>
     </p>
     <p>
       OpenCV can be used to display images, draw shapes over images (rectangles, circles, lines, ellipses, polygons, and
-      text), apply filter to images (greyscale, color filter, blur,...)
+      text), apply filter to images (grayscale, color filter, blur, etc.)
     </p>
-    <p>Since videos are just a sequence of images, the same modifications can be done to videos as well.</p>
-    <h2 id="the-learning-curve">The Learning curve</h2>
+    <p>
+      Since videos are just a sequence of images, the same modifications can be done to videos (video frames) as well.
+    </p>
+    <p>
+      In our example project, we used OpenCV with a pre-trained model to capture video input from a user's camera and
+      draw a rectangle around any face that it detects. It's a simple example, and it's only touching the tip of the
+      iceberg regarding the full functionality of the library.
+    </p>
+    <h3 id="the-learning-curve">The Learning curve</h3>
     <p>
       The documentation of OpenCV, which can be found <a href="https://docs.opencv.org/4.5.5/">here</a> for the latest
       version, is not very useful. It contains all the classes methods, parameters and return values and in some cases
-      there are even examples, but it is rather chaotic and browsing trough the documentation you feel like your are in
-      a maze and lost. While making the example project and doing our research we often found ourselves searching for
+      there are even examples, but it is rather chaotic and browsing through the documentation you feel like you are in
+      a maze and lost. While making the example project and doing our research, we often found ourselves searching for
       explanations or solutions on online forums like stackoverflow or articles that describe the usage of some method
       better than the documentation itself, and we feel like that should not be the case with a well known library as
       OpenCV.
     </p>
     <p>
       It was hard to acclimate to the usage of the library since OpenCV does not implement error handling codes which,
-      as you can imagine, makes it very hard do debug the code.
+      as you can imagine, makes it very hard to do debug the code.
     </p>
-    <h2 id="opencv-compared-to-matlab">OpenCV compared to MatLab</h2>
+    <h3 id="opencv-compared-to-matlab">OpenCV compared to MatLab</h3>
     <p>
       The main advantage of OpenCV beside its functionality is the fact that it is open source and much faster in
-      execution (the speed ratio reaches more than 80 in some cases). But of course OpenCV has some downsides. Matlab is
-      more convenient in developing, having a better documentation, and it has a more sophisticated data presentation.
+      execution (the speed ratio reaches more than 80 in some cases). But of course, OpenCV has some downsides. Matlab
+      is more convenient in developing, having a better documentation, and it has a more sophisticated data
+      presentation.
     </p>
     <h4 id="ease-of-use">Ease of use</h4>
     <p>
-      One of OpenCVs disadvantages is the ease of use. As an example lets try to display a picture. If we try to display
-      a picture in MatLab we need two lines of code. One to load the image and one to display it. In OpenCV we need
-      around 10-15 lines of code. This is because a lot of the &quot;housekeeping&quot; that is done in the background
-      by MatLab has to be done manually with OpenCV.
+      One of OpenCVs disadvantages is the ease of use. As an example, let's try to display a picture. If we try to
+      display a picture in MatLab we need two lines of code. One to load the image and one to display it. In OpenCV, we
+      need around 10-15 lines of code. This is because a lot of the &quot;housekeeping&quot; that is done in the
+      background by MatLab has to be done manually with OpenCV.
     </p>
     <h4 id="speed">Speed</h4>
     <p>
       On the other hand, since MatLab is such a high level scripting language, it is very slow compared to good code
       written with OpenCV. As an example, MatLab might typically be able to process about 3-4 frames of a video per
       second, while the same application written with OpenCV might be able to process around 30 frames per second, which
-      definitely gives it an edge especially in real-time applications.
+      definitely gives it an edge, especially in real-time applications.
     </p>
     <h4 id="resources-needed">Resources needed</h4>
     <p>
-      The same logic follows if we look at the resources needed to run an application. Because MatLab is is such a high
+      The same logic follows if we look at the resources needed to run an application. Because MatLab is such a high
       level scripting language, it is inherently inefficient. Apparently it is by no means unheard of that MatLab uses
       over one Gigabyte of RAM, a comparable project with OpenCV only uses about 100 Megabytes of RAM, assuming your
       code does not have any Memory leaks.
     </p>
     <p>
-      In the end it is probably fair to say, that OpenCV has the strong potential to yield better results if you are
+      In the end, it is probably fair to say, that OpenCV has the strong potential to yield better results if you are
       willing to invest the time to learn where its pitfalls are, how to handle them and how to actually use it.
     </p>
-    <h2 id="developer-adoption">Developer adoption</h2>
+    <h3 id="developer-adoption">Developer adoption</h3>
     <p>
       OpenCV is well known to developers in general. The project initially released in June 2000 has since gained a lot
       of traction.
@@ -1244,26 +1250,26 @@
         alt="Some openCV uses"
       />
       As seen in the picture above, OpenCV is utilized in many exciting applications such as object recognition and
-      person tracking, 3D scanning, Automated driver assistance or medical imaging. The specific extend to which OpenCV
+      person tracking, 3D scanning, Automated driver assistance or medical imaging. The specific extent to which OpenCV
       is used in these applications is hard to track down, since while OpenCV is open source, applications that use the
       Library are themselves not open source.
     </p>
-    <h2 id="opencv-licensing">OpenCV Licensing</h2>
+    <h3 id="opencv-licensing">OpenCV Licensing</h3>
     <p>
-      Since the beginning of openCV, it operated under a BSD license. This License allowed everybody to use to use the
-      library in any kind of project, be it a personal project, education, research or even commercial projects for free
-      without any limitations. The Only problem with this license is, that if someone contributes code to the library,
-      that they patented prior to this contribution, they could still sue someone for the commercial use of this
-      particular code. To prevent this, OpenCV 4.5.0 and above, released in October 2020 uses an apache 2 license. While
-      this change still allows the free use of OpenCV in any project, it also prevents contributors from suing anyone
-      for using any part of the library in any kind of project.
+      Since the beginning of openCV, it operated under a BSD license. This License allowed everybody to use the library
+      in any kind of project, be it a personal project, education, research or even commercial projects for free without
+      any limitations. The Only problem with this license is, that if someone contributes code to the library, that they
+      patented prior to this contribution, they could still sue someone for the commercial use of this particular code.
+      To prevent this, OpenCV 4.5.0 and above, released in October 2020 uses an apache 2 license. While this change
+      still allows the free use of OpenCV in any project, it also prevents contributors from suing anyone for using any
+      part of the library in any kind of project.
     </p>
-    <h2 id="closing-statements">Closing statements</h2>
+    <h3 id="closing-statements">Closing statements</h3>
     <p>
       We think that OpenCV is a very versatile and useful tool for programmers that have to work with images, whether
       they use the library for image manipulation or for object detection or other AI uses. With an improved
       documentation, this library would be the one to rule them all, but until then one has to either spend time
-      searching the internet for answers or resort to a different library which is a shame.
+      searching the internet for answers or resort to a different library, which is a shame.
     </p>
     <h5 id="sources">Sources:</h5>
     <ul>
